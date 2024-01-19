@@ -2,7 +2,7 @@
   "name": "@xb-onepiece/utils",
   "version": "0.0.0",
   "description": "common utils",
-  "author": "liuqingru <liuqingru@bilibili.com>",
+  "author": "lqrdream@gmail.com",
   "homepage": "",
   "license": "MIT",
   "main": "lib/utils.js",

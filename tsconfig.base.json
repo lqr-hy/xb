@@ -1,0 +1,31 @@
+// 基础配置
+{
+  "compilerOptions": {
+    // Type Checking
+
+    // Modules
+    "module": "amd",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    // Emit
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // JavaScript Support
+    "allowJs": true,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    // Language and Environment
+    "experimentalDecorators": true,
+    "target": "es6",
+    "lib": [
+      "es2022"
+    ]
+  }
+}

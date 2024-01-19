@@ -5,8 +5,6 @@
     "packages/*"
   ],
   "dependencies": {
-    "import-local": "^3.1.0",
-    "npmlog": "^7.0.1"
   },
   "devDependencies": {
     "lerna": "^8.0.2"

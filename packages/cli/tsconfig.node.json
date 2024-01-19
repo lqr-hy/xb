@@ -1,0 +1,20 @@
+// 适用于 node 的配置
+{
+  "extends": "../../tsconfig.base.json",
+
+  "compilerOptions": {
+    // Modules
+    "module": "commonjs",
+    "types": [
+      "node"
+    ],
+
+    // Interop Constraints
+    "esModuleInterop": true,
+
+    // Language and Environment
+    "lib": [
+      "es2022"
+    ]
+  }
+}
