@@ -1,8 +1,8 @@
 {
   "extends": "./tsconfig.node.json",
   "compilerOptions": {
-    "baseUrl": "./src/index.ts",
-    "rootDir": "src",
+    "baseUrl": ".",
+    "rootDir": "../../packages",
     "types": [
       "node",
     ],

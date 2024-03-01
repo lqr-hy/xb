@@ -6,7 +6,6 @@ import minimist from 'minimist';
 import dotEnv from 'dotenv'
 
 import pkg from '../package.json';
-import utils from '@xb-onepiece/utils'
 import log from './log/log'
 import { DEFAULT_CLI_HOME, LOWEST_NODE_VERSION } from './config/config'
 import path from 'node:path';

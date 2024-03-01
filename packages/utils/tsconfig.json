@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    // "paths": {},                
+  },
+  "include": ["./**/*.ts"],
+  "exclude": [
+    "__tests__/**",
+  ],
+  "files": [
+    "src/global.d.ts"
+  ]
+}
