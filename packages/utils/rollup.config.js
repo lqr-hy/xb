@@ -13,6 +13,8 @@ export default {
     json(),
     commonjs(),
     typescript({
-      sourceMap: false
+      sourceMap: false,
+      target: 'es6',
+      module: 'esnext' 
     })]
 }

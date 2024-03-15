@@ -1,6 +1,6 @@
 {
   "name": "@xb-onepiece/cli",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.4",
   "description": "cli tool",
   "author": "lqrdream@gmail.com",
   "homepage": "",
@@ -14,9 +14,11 @@
   ],
   "scripts": {
     "test": "node ./__tests__/cli.test.js",
-    "build": "rimraf dist/**  && rollup --config rollup.config.js --bundleConfigAsCjs && cp -r ./src/cli.js ./dist/"
+    "build": "rimraf dist/**  && rollup --config rollup.config.js --bundleConfigAsCjs && cp -r ./src/cli.js ./dist/",
+    "release": "ts-node src/publish.ts"
   },
   "dependencies": {
+    "@xb-onepiece/utils": "^0.0.0",
     "colors": "^1.4.0",
     "dotenv": "^16.3.1",
     "import-local": "^3.1.0",
@@ -35,5 +37,9 @@
     "@types/npmlog": "^7.0.0",
     "@types/semver": "^7.5.6",
     "rollup": "^4.9.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

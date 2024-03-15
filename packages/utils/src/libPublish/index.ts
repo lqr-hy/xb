@@ -1,5 +1,6 @@
 import { prompt } from 'inquirer'
 import log from 'npmlog'
+import { release } from './release'
 
 async function publish(lib, version) {
   const { releaseType } = await prompt([{
@@ -16,10 +17,11 @@ async function publish(lib, version) {
 
   log.info('Release Type', releaseType)
   try {
-    
+    await release(lib, releaseType, version)
   } catch (err) {
     console.log(err)
   }
 }
 
-publish('vue', '2.6.14')
+
+export { publish }
